@@ -133,17 +133,17 @@ def test_printing_optimization():
     print(f'{TITLE0} --= Тестування оптимізації черги 3D-друку =-- {RESET}')
     print(f'{ITALIC+DIM} (групування списком у списку для наочності){RESET}\n')
 
-    print(f'{TITLE1}Тест 1 {UN_BD+DIM+ITALIC}(однаковий пріоритет){RESET}')
+    print(f'{TITLE1} Тест 1 {UN_BD+DIM+ITALIC}(однаковий пріоритет) {RESET}')
     result1 = optimize_printing(test1_jobs, constraints)
     print(f'\tПорядок друку: {result1["print_order"]}')
     print(f'\tЗагальний час: {result1["total_time"]} хвилин\n')
 
-    print(f'{TITLE2}Тест 2 {UN_BD+DIM+ITALIC}(різні пріоритети){RESET}')
+    print(f'{TITLE2} Тест 2 {UN_BD+DIM+ITALIC}(різні пріоритети) {RESET}')
     result2 = optimize_printing(test2_jobs, constraints)
     print(f'\tПорядок друку: {result2["print_order"]}')
     print(f'\tЗагальний час: {result2["total_time"]} хвилин\n')
 
-    print(f'{TITLE3}Тест 3 {UN_BD+DIM+ITALIC}(перевищення обмежень){RESET}')
+    print(f'{TITLE3} Тест 3 {UN_BD+DIM+ITALIC}(перевищення обмежень) {RESET}')
     result3 = optimize_printing(test3_jobs, constraints)
     print(f'\tПорядок друку: {result3["print_order"]}')
     print(f'\tЗагальний час: {result3["total_time"]} хвилин\n')
